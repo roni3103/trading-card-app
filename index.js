@@ -2,7 +2,7 @@ const express = require('express');
 
 const mongoose = require('mongoose')
 
-const stylus = require('stylus');
+// const stylus = require('stylus');
 
 const app = express();
 
@@ -10,14 +10,15 @@ const app = express();
 app.set('views',__dirname + '/views');
 app.set('view engine','pug');
 
-function compile(str, path) {
-  return stylus(str).set('filename', path);
-}
+// function compile(str, path) {
+//   return stylus(str).set('filename', path);
+// }
 
-app.use(stylus.middleware({
-  src: __dirname + '/public',
-  compile:compile
-}))
+// Tell our middleware where to look for css
+// app.use(stylus.middleware({
+//   src: __dirname + '/public',
+//   compile:compile
+// }))
 
 // Tell app where to look for the relevant files
 app.use(express.static(__dirname + '/public'))
