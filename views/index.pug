@@ -1,10 +1,36 @@
 doctype
 html
   head
-    title= title
+    title= title /*title passed from our route*/
     link(href='favicon.ico', rel='shortcut icon',type='image/x-icon')
     link(rel='stylesheet', type="text/css" href='/css/bootstrap.css')
     link(rel="stylesheet", type="text/css", href="/css/my.css")
+    
     base(href="/")
-  body(ng-app="app")
-    h1= message
+    
+  body(ng-app="app") 
+    div.container-fluid
+      div
+        .row(style="background-color: black; height: 78px; color: white; padding: 20px; font-size: 2em;")= title
+      div
+        .row
+        div.col-md-2
+          ul.nav.nav-pills.nav-stacked
+            each val in listItems
+             li
+                a(href=val.href)= val.item
+        div.col-md-10
+          img.img-rounded(src="../images/mtg1.png")
+          h3= title
+          p.text-left= message
+          
+        form(method='POST' action='')
+          //- filename to import currently just passed from root of directory
+          //- TODO - add file chooser here
+          p Filename to import 
+          input(type="text" name="deckname")
+          button.btn.btn-success.btn-lg(type='submit') Import Card Collection
+
+      //- .navbar.navbar-inverse.navbar-fixed-top.container.navbar-header
+      //-   a.navbar-brand(href="/")= title /*title passed from our route*/
+      //- h1= message /*message passed from our route*/

@@ -1,3 +1,13 @@
-h1 {
-    background-color: #998a00;
+form input, form p, form button {
+  margin-left: 20px;
 }
+.btn-success {
+  margin-left: 40px;
+}
+div.navbar-header a.navbar-brand {
+    margin-top: -15px;
+    margin-bottom: -20px;
+  }
+.navbar-header a.navbar-brand h6 {
+    color: #ccc;
+  }

@@ -18,15 +18,20 @@
   },
   "homepage": "https://github.com/roni3103/trading-card-app#readme",
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "jasmine": "^3.4.0"
+    "jasmine": "^3.4.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "nock": "^10.0.6",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "angular": "^1.7.8",
     "angular-resource": "^1.7.8",
     "angular-route": "^1.7.8",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
     "bootstrap-css-only": "^4.3.1",
     "express": "^4.17.1",
+    "jquery": "^3.4.1",
     "mongoose": "^5.6.0",
     "nodemon": "^1.19.1",
     "pug": "^2.0.3"
