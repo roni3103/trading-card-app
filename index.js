@@ -109,6 +109,7 @@ app.post('/add/card', function(req, res){
 
 app.post('/add/collection', function(req, res){
 	// as its a post request it gets passed in the body not the params
+	// presently working with a file which we require but this will refactor later
 	var stuffToInsert = require(req.body.deckname);
 	
 	MyCard.insertMany(stuffToInsert, function(err, results){
