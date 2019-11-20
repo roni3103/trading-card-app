@@ -22,7 +22,7 @@
     "jasmine": "^3.4.0"
   },
   "dependencies": {
-    "angular": "^1.7.8",
+    "angular": "^1.7.9",
     "angular-resource": "^1.7.8",
     "angular-route": "^1.7.8",
     "bootstrap-css-only": "^4.3.1",
